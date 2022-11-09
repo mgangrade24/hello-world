@@ -1,37 +1,55 @@
-<form action="action_page.php">
-  <div class="container">
-    <h1>New user Register for DevOps Learning</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-     
-    <label for="Name"><b>Enter Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
-    <br>
-    
-    <label for="mobile"><b>Enter mobile</b></label>
-    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
-    <br>
-
-    <label for="email"><b>Enter Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-    <br>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-    <br>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
-    <br>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
-  </div>
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-
-   <h1> Thankyou, Happy Learning </h1>
-
-  
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+<html>
+<!-- the title will appear on the page-->
+<head>
+<title>Employee Interests Survey</title>
+</head>
+<body>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="center">
+<!--Adds a heading to the form-->
+<h1>Employee Interests Survey form</h1>
+Enter your name:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" size=35 maxlength=35 value="">
+<!--Adds spaces - remove and see what happens -->
+</br></br>
+Enter your department:
+<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+Tell us a little about yourself:
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+Do you exercise at home?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</p>
+How do you like to read about your favorite topics?
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="Books">Books
+<input type="checkbox" name="Web">Online resources
+<input type="checkbox" name="Phone">Phone apps
+<input type="checkbox" name="Magazines">Magazines
+</p>
+What genre of movies do you like?
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="moviepref" ><option>
+<option value=1 selected = "true">comedy
+<option value=2 >romance
+<option value=3 >thriller
+<option value=4 >horror
+<option value=5 >biopic
+</select>
+</br></br>
+<!--submits the information entered in the form by the user -->
+<input type=submit value="Submit form">
+</div>
 </form>
+</body>
+</html>
